@@ -35,7 +35,7 @@ class Main:
     def rename(self, dato1, dato2):
         self.salida['text'] = 'Procesando...'
         try:
-            comando = "netdom RENAMECOMPUTER " + dato1 + " /newname:" + dato2 + " /UserD:grp_security\lolave /PasswordD:Secu.2021 /FORCE"
+            comando = "netdom RENAMECOMPUTER " + dato1 + " /newname:" + dato2 + " /UserD:user /PasswordD:password /FORCE"
             res = subprocess.run(comando, shell=True)
             completed = res.returncode
 
