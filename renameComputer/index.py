@@ -23,7 +23,6 @@ class Main:
         self.nuevoNombre = Entry(frame)
         self.nuevoNombre.grid(row=2, column=1)
         
-        #Cargar producto
         ttk.Button(frame, text = 'Aceptar', command = lambda: Main.rename(self, self.destino.get(), self.nuevoNombre.get()) ).grid(row=3, columnspan=3)
         #ttk.Button(frame, text = 'Salir', command = lambda: quit(self) ) .grid(row=3, column=1)
 
